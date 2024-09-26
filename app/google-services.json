@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "440857496640",
+    "project_id": "swift-bank-app-2aa0d",
+    "storage_bucket": "swift-bank-app-2aa0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440857496640:android:c4cc64dd4317713a4ce3a5",
+        "android_client_info": {
+          "package_name": "com.example.swiftbank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtVRtk0zDw5cS6joZ_Gp3U12elew3pdx0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
