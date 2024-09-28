@@ -27,7 +27,7 @@
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:id="@+id/signupName"
                 android:background="@drawable/lavender_border"
                 android:backgroundTint="@color/white"
@@ -40,7 +40,7 @@
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:id="@+id/signupEmail"
                 android:background="@drawable/lavender_border"
                 android:layout_marginTop="20dp"
@@ -53,7 +53,7 @@
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:id="@+id/signupUsername"
                 android:background="@drawable/lavender_border"
                 android:layout_marginTop="20dp"
@@ -65,7 +65,7 @@
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:id="@+id/signupPassword"
                 android:background="@drawable/lavender_border"
                 android:layout_marginTop="20dp"
