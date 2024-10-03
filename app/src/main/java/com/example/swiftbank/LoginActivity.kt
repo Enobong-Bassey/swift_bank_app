@@ -16,7 +16,6 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
-
         setContentView(binding.root)
 
         // Initialize Firebase Database
@@ -33,6 +32,7 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this@LoginActivity, "All fields are mandatory", Toast.LENGTH_SHORT).show()
             }
         }
+
         binding.signupRedirectText.setOnClickListener {
             startActivity(Intent(this@LoginActivity, SignupActivity::class.java))
             finish()
@@ -48,14 +48,14 @@ class LoginActivity : AppCompatActivity() {
 
                         if(userData != null && userData.password == password){
                             Toast.makeText(this@LoginActivity, "Login Successful", Toast.LENGTH_SHORT).show()
-                            startActivity((Intent(this@LoginActivity, MainActivity::class.java)))
+                            startActivity((Intent(this@LoginActivity, BankIntroActivity::class.java)))
                             finish()
                             return
                         }
                     }
 
                 }
-                Toast.makeText(this@LoginActivity, "Login Not Successful", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@LoginActivity, "Login Failed", Toast.LENGTH_SHORT).show()
 
             }
             override fun onCancelled(databaseerror: DatabaseError) {

@@ -61,6 +61,7 @@
                 android:drawableLeft="@drawable/baseline_person_pin_24"
                 android:padding="8dp"
                 android:hint="Username"
+                android:inputType="text"
                 android:drawablePadding="8dp" />
 
             <EditText

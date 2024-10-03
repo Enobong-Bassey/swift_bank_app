@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Swift Bank Mobile</string>
+    <string name="personalbankingbtn">Banking</string>
+    <string name="mortgagebtn">Mortgage</string>
+    <string name="investmentbtn">Investment</string>
+    <string name="BankingIntroMsg">Banking made easy</string>
+    <string name="MortgageIntroCaption">Best Mortgage Options</string>
+    <string name="MortgageIntroMsg">Our mortgage options turns your dream of owning your own home a reality. \n\nNow let's get you into that desired house.</string>
+    <string name="BankFirstName">Swift</string>
+    <string name="BankSecondName">Bank</string>
+    <string name="getstarted">Get Started</string>
+    <string name="short_term__repay">Short Term</string>
+    <string name="short_term_desc">Repayment period: 10 years \nInterest rate: 3.95%</string>
+    <string name="medium_term__repay">Medium Term</string>
+    <string name="medium_term_desc">Repayment period: 20 years\nInterest rate: 5.99%</string>
+    <string name="long_term__repay">Long Term</string>
+    <string name="long_term_desc">Repayment period: 40 years\nInterest rate: 9.99%</string>
 </resources>

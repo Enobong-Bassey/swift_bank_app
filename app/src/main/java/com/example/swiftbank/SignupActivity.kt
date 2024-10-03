@@ -42,30 +42,24 @@ class SignupActivity : AppCompatActivity() {
     }
 
     // Function to handle user signup
-    private fun signupUser(custname : String, custemail : String, username: String, password: String) {
+    private fun signupUser(custemail : String, custname : String, username: String, password: String) {
         databaseReference.orderByChild("username").equalTo(username)
             .addListenerForSingleValueEvent(object : ValueEventListener {
-                override fun onDataChange(snapshot: DataSnapshot) {
-                    if (snapshot.exists()) {
-                        // Username already exists
-                        Toast.makeText(this@SignupActivity, "Username already exists", Toast.LENGTH_SHORT).show()
-                    } else {
-                        // Proceed with saving the new user to the database
-                        val userId = databaseReference.push().key // Generate unique ID
-                        val user = UserData(userId, custname, custemail, username, password) // Create UserData object
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    if (!dataSnapshot.exists()) {
 
-                        userId?.let {
-                            databaseReference.child(it).setValue(user)
-                                .addOnCompleteListener { task ->
-                                    if (task.isSuccessful) {
-                                        Toast.makeText(this@SignupActivity, "Signup Successful", Toast.LENGTH_SHORT).show()
-                                        startActivity(Intent(this@SignupActivity, LoginActivity::class.java))
-                                        finish()
-                                    } else {
-                                        Toast.makeText(this@SignupActivity, "Signup Failed", Toast.LENGTH_SHORT).show()
-                                    }
-                                }
-                        }
+                        val id = databaseReference.push().key // Generate unique ID
+                        val userData = UserData(id, custemail, custname, password, username)
+                        databaseReference.child(id!!).setValue(userData)
+                        Toast.makeText(this@SignupActivity, "Signup Successful", Toast.LENGTH_SHORT).show()
+                        startActivity(Intent(this@SignupActivity, LoginActivity::class.java))
+                        finish()
+                        // Username already exists
+
+                    } else {
+                        Toast.makeText(this@SignupActivity, "User already exists", Toast.LENGTH_SHORT).show()
+                        // Proceed with saving the new user to the database
+                         // Create UserData object
                     }
                 }
 

@@ -12,7 +12,12 @@
     <color name="lightest_blue">#FFCCCCFF</color>
     <color name="yellow">#FFC107</color>
     <color name="lightBrown">#E6C59E</color>
-    <color name="darkBrown">#34190E</color>
+    <color name="darkestBrown">#34190E</color>
+    <color name="darkerBrown">#b14939</color>
+    <color name="miniBlue">#365283</color>
+    <color name="mildBrown">#48322f</color>
+    <color name="slateGrey">#44635d</color>
+    <color name="navyBlue">#1b315e</color>
     <color name="lightOrange">#E6C59E</color>
     <color name="LightYellow">#f2e80B</color>
     <color name="Orange">#FF9800</color>
