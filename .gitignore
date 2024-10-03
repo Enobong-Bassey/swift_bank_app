@@ -13,3 +13,6 @@
 .externalNativeBuild
 .cxx
 local.properties
+/app/src/main/res/drawable/new_background_4.png
+/app/src/main/res/drawable/new_background_3.png
+/app/src/main/res/drawable/new_background.png
