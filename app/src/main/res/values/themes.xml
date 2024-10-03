@@ -6,6 +6,7 @@
     </style>
 
     <style name="Theme.SwiftBankApp" parent="Base.Theme.SwiftBankApp" />
+
     <style name="Theme.Transparent" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:windowFullscreen">true</item>
 

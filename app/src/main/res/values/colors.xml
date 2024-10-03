@@ -19,7 +19,7 @@
     <color name="slateGrey">#44635d</color>
     <color name="navyBlue">#1b315e</color>
     <color name="lightOrange">#E6C59E</color>
-    <color name="LightYellow">#f2e80B</color>
-    <color name="Orange">#FF9800</color>
-    <color name="Red">#FF0000</color>
+    <color name="lightYellow">#f2e80B</color>
+    <color name="orange">#FF9800</color>
+    <color name="red">#FF0000</color>
 </resources>
